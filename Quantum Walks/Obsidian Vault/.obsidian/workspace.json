@@ -1,0 +1,209 @@
+{
+  "main": {
+    "id": "f96569302e4345a0",
+    "type": "split",
+    "children": [
+      {
+        "id": "49967466d993891d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3dee0cf909ddbe11",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Introduction.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "deabc5a1086a5615",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Classical Random Walk/Classical Random Walk.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b4c431ed5417c765",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Classical Random Walk/Pasted image 20241013155011.png"
+              }
+            }
+          },
+          {
+            "id": "0e25245a433964c7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Coined Quantum Walk/Coined Quantum Walk.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aa1e059217db02c0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Introduction.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0701d6de71a7b219",
+    "type": "split",
+    "children": [
+      {
+        "id": "53ffb219fd3f2b48",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "099246bdbc184d2b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6927fdeeac26cc85",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5fc5fe9faea6cada",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "898cb0a03a694c60",
+    "type": "split",
+    "children": [
+      {
+        "id": "a6c96618c45b2e92",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "31fadbddd40667c1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Coined Quantum Walk/Coined Quantum Walk.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f481ea9620d91b03",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Coined Quantum Walk/Coined Quantum Walk.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c5fedf59b9da95c0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "0193ebce74814bbc",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Coined Quantum Walk/Coined Quantum Walk.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "0e25245a433964c7",
+  "lastOpenFiles": [
+    "Introduction.md",
+    "Coined Quantum Walk/Coined Quantum Walk.md",
+    "Untitled 1.md",
+    "Classical Random Walk/Pasted image 20241013155011.png",
+    "Coined Quantum Walk",
+    "Classical Random Walk/Classical Random Walk.md",
+    "Pasted image 20241013155325.png",
+    "Classical Random Walk",
+    "Quantum Walks",
+    "desktop.ini"
+  ]
+}
