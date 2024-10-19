@@ -72,3 +72,59 @@ We can see that this quantum coin behaves differently from the classical counter
 ![[Pasted image 20241013185338.png]]
 
 
+One way to apply Quantum Walks efficiently is to use recursion. The state of the quantum walk in the computational basis is:
+
+$$
+\ket{\psi(t)} = \sum_{n= -\infty}^{\infty} (A_n(t)\ket0+B(t)\ket1)\ket{n}
+$$
+Where the amplitudes satisfy the constraints
+$$
+ \sum_{n= -\infty}^{\infty} |A_n(t)|^2 + |B_n(t)|^2 = 1
+$$
+When we apply the $H \otimes I$ followed by the shift operator, we get the following recursive formulas:
+$$
+\begin{aligned}
+	A_n(t+1) = \frac{A_{n-1}(t)+B_{n-1}(t)}{\sqrt2} \\
+	B_n(t+1) = \frac{A_{n+1}(t)-B_{n+1}(t)}{\sqrt2}
+\end{aligned}
+
+$$
+And using the initial conditions
+$$
+\begin{equation}
+A_n(0) =
+\begin{cases}
+      1, \text\ if\ n=0\\
+      0,\ otherwise\\
+\end{cases} 
+\end{equation}
+$$
+And $B(0) = 0$ for all $n$, we can determine the probability for any $t$. The probability is then naturally given by:
+$$
+p(t,n) = |A_n(t)|^2 + |B_n(t)|^2
+$$
+This is a really good strategy to implement in functional programming, such as Quipper.
+
+![[Pasted image 20241014232813.png]]
+This graph represents the probability of finding the walker in various positions (positions where the probability is 0 are not present), after 100 iterations.
+We see that the probability distribution is asymmetrical. The probability of finding the particle in the right hand size is much bigger than finding it on the left side. The peak is in around $\frac{100}{\sqrt2}$. This suggests that the quantum walk has a *ballistic* behavior, which means that the particle can be found away from the origin as if it is in a uniform rightward motion.
+
+The reason for that is because the Hadamard gate introduces a negative sign when applied to the state $\ket1$. This means that there are more cancellations of terms when the coin state is $\ket1$. Since the coin state $\ket0$ induces a motion to the right and $\ket1$ to the left, the final effect is the asymmetry we see, where the probability tends to the right.
+
+If we apply the following initial condition:
+$$
+\ket{\psi(0)} = -\ket1\ket{n=0}
+$$
+Then, we would have a mirrored version of the graph seen earlier.
+
+Furthermore, if we apply the following initial condition:
+$$
+\ket{\psi(0)} = \frac{\ket0 - i\ket1}{\sqrt2}\ket{n=0}
+$$
+We would obtain a symmetrical (although not centered on the origin)  graph:![[Pasted image 20241014234159.png]]
+The entries of the Hadamard coin are real numbers. When we apply the evolution operator, terms with the imaginary unit are not converted into terms without the imaginary unit and vice versa. There are no cancellations of terms of the walk that goes to the right with the terms of the walk that goes to the left.
+
+Now we need to figure out the standard deviation. The formula is given by:
+$$
+		\sigma(t) = \sqrt{\sum_{n=-\infty}^{\infty}n^2 \ p(t,n)}
+$$
