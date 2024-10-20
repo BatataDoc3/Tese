@@ -128,3 +128,4 @@ Now we need to figure out the standard deviation. The formula is given by:
 $$
 		\sigma(t) = \sqrt{\sum_{n=-\infty}^{\infty}n^2 \ p(t,n)}
 $$
+This, applied to the quantum case, gives us a standard deviation of $\sigma(t) =0.54t$

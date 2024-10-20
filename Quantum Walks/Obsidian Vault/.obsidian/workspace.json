@@ -16,7 +16,9 @@
                 "file": "Introduction.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Introduction"
             }
           },
           {
@@ -28,7 +30,9 @@
                 "file": "Classical Random Walk/Classical Random Walk.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Classical Random Walk"
             }
           },
           {
@@ -38,7 +42,9 @@
               "type": "image",
               "state": {
                 "file": "Classical Random Walk/Pasted image 20241013155011.png"
-              }
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20241013155011"
             }
           },
           {
@@ -50,7 +56,9 @@
                 "file": "Coined Quantum Walk/Coined Quantum Walk.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Coined Quantum Walk"
             }
           },
           {
@@ -59,14 +67,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Introduction.md",
+                "file": "Coined Quantum Walk/Coined Quantum Walk.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Coined Quantum Walk"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -86,7 +96,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -101,7 +113,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -109,7 +123,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -140,7 +156,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Coined Quantum Walk"
             }
           },
           {
@@ -152,7 +170,9 @@
                 "file": "Coined Quantum Walk/Coined Quantum Walk.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Coined Quantum Walk"
             }
           },
           {
@@ -163,7 +183,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -173,7 +195,9 @@
               "type": "outline",
               "state": {
                 "file": "Coined Quantum Walk/Coined Quantum Walk.md"
-              }
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Coined Quantum Walk"
             }
           }
         ]
@@ -193,12 +217,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0e25245a433964c7",
+  "active": "aa1e059217db02c0",
   "lastOpenFiles": [
-    "Pasted image 20241014234159.png",
-    "Pasted image 20241014232813.png",
     "Introduction.md",
     "Coined Quantum Walk/Coined Quantum Walk.md",
+    "Pasted image 20241014234159.png",
+    "Pasted image 20241014232813.png",
     "Pasted image 20241013185338.png",
     "Untitled 1.md",
     "Classical Random Walk/Pasted image 20241013155011.png",
