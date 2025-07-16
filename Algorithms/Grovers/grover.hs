@@ -1,4 +1,5 @@
 import Quipper
+import Quipper.Internal.Printing
 
 
 cz :: (Qubit, Qubit) -> Circ (Qubit, Qubit)
@@ -21,20 +22,25 @@ grover (q1 ,q2) = do
     (q1, q2) <- oracle (q1, q2)
 
     -- Diffusion operator
-    comment ""
+    --comment ""
     (q1, q2) <- map_hadamard (q1,q2)
     q1 <- gate_Z q1
     q2 <- gate_Z q2
     (q1, q2) <- cz(q1, q2)
-    comment ""
+    --comment ""
     (q1, q2) <- map_hadamard (q1,q2)
     return (q1, q2)
 
--- Main function to execute the quantum circuit
+
 print_final :: IO ()
-print_final =  print_simple Preview (do
-    q1 <- qinit False
-    q2 <- qinit False
-    (q1', q2') <- grover (q1, q2)
-    measure (q1', q2')
-    )
+print_final =
+    print_simple EPS $ do
+        q1 <- qinit False
+        q2 <- qinit False
+        (q1', q2') <- grover (q1, q2)
+        measure (q1', q2')
+
+
+main :: IO ()
+main = do
+  print_final

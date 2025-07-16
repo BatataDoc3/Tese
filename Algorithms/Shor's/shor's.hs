@@ -65,6 +65,10 @@ shor's = do
     mapM measure (take 8 qubits)
 
 print_final :: IO ()
-print_final =  print_simple Preview (do
+print_final =  print_simple EPS (do
      shor's
     )
+
+main :: IO ()
+main = do
+  print_final
