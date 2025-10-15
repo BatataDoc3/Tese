@@ -3,6 +3,16 @@
 import Quipper
 import Quipper.Internal.Printing
 
+diffuser :: (Qubit, Qubit) -> Circ (Qubit, Qubit)
+diffuser (q1, q2) = do
+    (q1, q2) <- map_hadamard (q1,q2)
+    q1 <- qnot q1
+    q2 <- qnot q2
+    (q1, q2) <- map_hadamard (q1,q2)
+    gate_Z_at q1 `controlled` q2
+    (q1, q2) <- map_hadamard (q1,q2)
+    return (q1, q2)
+
 oracle :: (Qubit, Qubit) -> Circ (Qubit, Qubit)
 oracle (q1, q2) = do
     q1 <- qnot q1
@@ -17,6 +27,9 @@ grovers (q1, q2) = do
 
     -- Step 2: Apply Oracle
     (q1, q2) <- oracle (q1, q2)
+
+    -- Step 3: Apply difuser
+    (q1, q2) <- diffuser (q1, q2)
     return (q1, q2)
 
 print_final :: IO ()
